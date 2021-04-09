@@ -69,7 +69,7 @@ let postVueConfig = [
 ];
 
 if (process.env.SEP_CSS) {
-  postVueConfig = [css({ output: './lib/bundle.css' }), ...postVueConfig];
+  postVueConfig = [css({ output: './lib/@mukurowz/bundle.css' }), ...postVueConfig];
 }
 
 const baseConfig = {
@@ -157,7 +157,7 @@ const mapComponent = name => {
       output: {
         format: 'umd',
         name: capitalize(name),
-        file: `lib/components/${name}/index.ts`,
+        file: `lib/@mukurowz/components/${name}/index.ts`,
         exports: 'named',
         globals,
       },
@@ -187,7 +187,7 @@ if (!argv.format || argv.format === 'es') {
     external,
     output: {
       format: 'esm',
-      dir: 'lib/esm',
+      dir: 'lib/@mukurowz/esm',
     },
     plugins: [
       resolve({
@@ -212,7 +212,7 @@ if (!argv.format || argv.format === 'es') {
     external,
     output: {
       format: 'esm',
-      file: 'lib/vcalendar.esm.js',
+      file: 'lib/@mukurowz/vcalendar.esm.js',
     },
     plugins: [
       resolve({
@@ -246,7 +246,7 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'lib/vcalendar-browser.min.js',
+      file: 'lib/@mukurowz/vcalendar-browser.min.js',
       format: 'iife',
       name: 'vcalendar',
       exports: 'named',
@@ -282,7 +282,7 @@ if (!argv.format || argv.format === 'cjs') {
     output: {
       compact: true,
       format: 'cjs',
-      dir: 'lib/cjs',
+      dir: 'lib/@mukurowz/cjs',
       exports: 'named',
       globals,
     },
