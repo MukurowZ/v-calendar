@@ -149,6 +149,10 @@ export default {
     },
     showWeeknumbers: [Boolean, String],
     showIsoWeeknumbers: [Boolean, String],
+    buddhist: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     weeknumberKey() {
