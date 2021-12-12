@@ -1,9 +1,31 @@
 {
-  "name": "v-calendar",
-  "version": "2.3.2",
+  "name": "@mukurowz/v-calendar",
+  "version": "3.0.0-alpha.3",
   "private": false,
   "description": "A clean and extendable plugin for building simple attributed calendars in Vue.js.",
   "author": "Nathan Reyes <nathanreyes@me.com>",
+  "main": "lib/@MukurowZ/cjs/index.js",
+  "module": "lib/@MukurowZ/esm/index.js",
+  "unpkg": "lib/@MukurowZ/vcalendar.min.js",
+  "types": "types/index.d.ts",
+  "license": "MIT",
+  "homepage": "https://vcalendar.io",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "plugin",
+    "calendar",
+    "datepicker",
+    "date picker",
+    "highlights",
+    "dots",
+    "bars",
+    "indicators"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MukurowZ/v-calendar.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve src/lib.js",
     "build": "yarn build:lib && yarn build:calendar && yarn build:date-picker && yarn build:popover && yarn build:popover-row",
@@ -60,22 +82,16 @@
     "not ie 11",
     "not op_mini all"
   ],
-  "homepage": "https://vcalendar.io",
-  "keywords": [
-    "vue",
-    "vuejs",
-    "plugin",
-    "calendar",
-    "datepicker",
-    "date picker",
-    "highlights",
-    "dots",
-    "bars",
-    "indicators"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nathanreyes/v-calendar"
+  "peerDependencies": {
+    "@popperjs/core": "^2.4.0",
+    "vue": "^3.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/MukurowZ/v-calendar/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
   }
 }

@@ -86,6 +86,7 @@ export default {
         props: {
           minDate: this.minDateExact || this.minDate,
           maxDate: this.maxDateExact || this.maxDate,
+          buddhist: this.buddhist,
           disabledDates: this.disabledDates,
           availableDates: this.availableDates,
         },
@@ -163,6 +164,10 @@ export default {
     dragAttribute: Object,
     selectAttribute: Object,
     attributes: Array,
+    buddhist: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {

@@ -1,3 +1,8 @@
+# IMPORTANT NOTICE:
+This is a fork version of an amazing library [v-calendar](https://www.npmjs.com/package/v-calendar). It contains some customization from [@pixelart7/v-calendar](https://github.com/pixelart7/v-calendar) to suit my project needs. Mainly, this add support to showing Buddhist calendar year. I am highly recommend you to use the original package instead of this one.
+
+-----
+# VCalendar Plugin for Vue 3
 <p align="center">
     <a href="https://vcalendar.io/" target="_blank">
       <img width="200" src="https://res.cloudinary.com/dqgcfqzpk/image/upload/v1557324348/v-calendar/hero.png">
